@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>속성 선택자</title>
+<style>
+	ul {
+		list-style-type: none;
+			/* list-style:square; */
+
+		display: flex;
+
+		padding: 0px;
+	}
+	li a {
+		line-height:30px;
+		font-size: 14px;
+		color: blue;
+		text-decoration: none;
+
+		padding-right: 25px;
+
+		background-repeat: no-repeat;
+	}
+	li{
+		padding-left: 50px;
+	}
+
+	a[title]{
+		background-position: left center;
+		padding-left: 25px;
+	}
+
+	a[title=japanese]{
+		background-image: url("../images/n_jp.png");
+	}
+	a[title=english]{
+		background-image: url("../images/n_us.png");
+	}
+	a[title=chinese]{
+		background-image: url("../images/n_ch.png");
+	}
+	
+
+	a[href*="."]{
+		background-position: right center;
+	}
+
+	a[href$=".hwp"]{
+		background-image: url("../images/hwp_icon.gif");
+	}
+	a[href$=".xls"]{
+		background-image: url("../images/excel_icon.gif");
+	}
+	
+		
+</style>
+</head>
+
+<body>
+	<h3>외국어 서비스</h3>
+	<ul>
+		<li><a href="#" title="english">영어</a></li>
+		<li><a href="#" title="japanese">일본어</a></li>
+		<li><a href="#" title="chinese">중국어</a></li>
+	</ul>
+	
+	<h3>회사 소개 파일 다운 받기</h3>
+
+	<ul>
+		<li><a href="intro.hwp">hwp 파일</a></li>
+		<li><a href="intro.xls">엑셀 파일</a></li>
+	</ul>
+  </body>
+ </html>

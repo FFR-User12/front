@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>회원 가입</title>
+
+    <style>
+      h3{
+        text-align: center;
+      }
+      fieldset{
+        border-radius: 50px;
+
+        max-width: 900px;
+        min-width: 1200px;
+      }
+      ul{
+        list-style-type: none;
+        padding: 0px;
+      }
+      li{
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+
+        font-weight: bolder;
+
+        height: 50px;
+        align-items: center;
+      }
+      li:nth-child(6){
+        height: 200px;
+        align-items: flex-start;
+      }
+      li > label{
+        margin-left: 5vw;
+        width: 15vw;
+      }
+      li > input{
+        border: 2px solid lightgray;
+        border-radius: 100px;
+      }
+      li > select{
+        border: 2px solid lightgray;
+        border-radius: 100px;
+
+        color: #6d6d6d;
+      }
+      li > textarea{
+        border: 2px solid lightgray;
+        border-radius: 10px;
+      }
+
+      li:last-child{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      li:last-child > button{
+        width: 200px;
+        height: 50px;
+
+        border-radius: 50px;
+        border: 0px;
+        padding: 0px;
+      }
+      li:last-child > button:last-child{
+        border: 1px solid black;
+        
+      }
+      li:last-child > button:first-child{
+        color: white;
+
+
+        background-color: black;
+      }
+      input:not([type="radio"]), select, textarea{
+        width: 50vw;
+        height: 100%;
+
+        box-sizing: border-box;
+      }
+      span{
+        color: #9f9f9f;
+      }
+      *[placeholder], select{
+        padding-left: 20px;
+      }
+      textarea{
+        padding-top:20px;
+      }
+    </style>
+  </head>
+  <body> 
+    <h3>회원 가입을 환영합니다</h3>
+    <div id="container">
+      <form>
+        <fieldset>
+          <!-- <legend>사용자 정보</legend>     -->
+          <ul>
+            <li>
+              <label for="uid">아이디</label>
+              <input type="text" id="uid" autofocus placeholder="4자 ~ 10자 사이, 공백없이" required> 
+            </li>
+            <li>
+              <label for="umail">이메일</label>
+              <input type="email" id="umail" required> 
+            </li>
+            <li>
+              <label for="pwd1">비밀번호</label>
+              <input type="password" id="pwd1" placeholder="문자와 숫자, 특수 기호 포함" required> 
+            </li>        
+            <li>
+              <label for="pw2">비밀번호 확인</label>
+              <input type="password" id="pwd2" required> 
+            </li>
+            <li>
+              <label for="path">가입 경로</label>
+              <select name="path">
+                <option value="선택">선택</option>
+                <option value="blog">블로그</option>
+                <option value="email">이메일</option>
+                <option value="search">검색</option>
+              </select>
+            </li>
+            <li>
+              <label for="memo">메모</label>
+              <textarea rows="4" placeholder="남길 말씀이 있다면 여기에"></textarea>
+            </li>
+            <li>
+              <label>이벤트 안내</label>
+              <div class="mailbox">
+                <input type="radio" name="mailing" id="mailing_y">
+                <span>수신</span> 
+                <input type="radio" name="mailing" id="mailing_n" checked>
+                <span>수신 안함</span>
+              </div>
+            </li>
+
+            <li>
+              <button type="submit">등록</button>
+              <button type="reset">취소</button>
+            </li>
+          </ul>      
+          
+        </fieldset>
+
+       
+          
+          
+      </form>
+    </div>           
+  </body>
+</html>

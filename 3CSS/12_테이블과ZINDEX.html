@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .table2{
+            caption-side: bottom;
+            width: 300px;
+
+            border:1px solid;
+            border-spacing: 50px 20px;
+            border-collapse: collapse;
+        }
+
+        .invisible{
+            visibility: invisible;
+        }
+
+        .none{
+            display: none;
+        }
+
+        h3:active + table{
+            display: table;
+        }
+
+        div#rel{
+            position: relative;
+        }
+        div#rel > div{
+            position: absolute;
+
+            width: 100px;
+            height: 100px;
+
+            border: 1px solid black;
+        }
+
+        div#one{
+            background-color: red;
+
+            top: 50px;
+            left: 50px;
+
+            z-index: 99;
+        }
+        div#two{
+            background-color: yellow;
+
+            top: 100px;
+            left: 100px;
+        }
+        div#tre{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>테이블</h3>
+    <table class="table2 invisible none">
+        <caption>프로축구경기</caption>
+
+        <thead>
+            <tr>
+                <td>Hello</td>
+                <td>world</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>and</td>
+                <td>again</td>
+            </tr>
+            <tr>
+                <td>welcome to the</td>
+                <td>aperture</td>
+            </tr>
+            <tr>
+                <td>science</td>
+                <td>enrichment</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="rel">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="tre"></div>
+    </div>
+</body>
+</html>

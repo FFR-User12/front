@@ -1,0 +1,40 @@
+main{
+    width:100%;
+    height: fit-content;
+
+    background-image: url("../images/2.png");
+
+    background-repeat: no-repeat;
+
+    background-position: right bottom;
+}
+
+section{
+    width: 80%;
+    height: fit-content;
+}
+
+article > h3{
+    background-color: black;
+
+    width: 5px;
+    white-space: nowrap;
+}
+article > h3::before{
+    content: "ab";
+    opacity: 0%;
+}
+
+article > dl{
+    border: 1px dotted black;
+
+    box-sizing: border-box;
+}
+
+article > dl > dt{
+    font-weight: bolder;
+}
+article > dl > dd{
+    margin-left: 0px;
+    margin-top: 20px;
+}
