@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayoutStyle</title>
+
+    <style>
+        .box1{
+            border: 2px solid red;
+
+            border-style: dashed;
+            border-width: thick;
+            border-color: blue;
+        }
+
+        .box2{
+            border: 2px solid orange;
+
+            border-style: double;
+        }
+
+        .size{
+            width: 200px;
+            height: 200px;
+        }
+
+        .size1{
+            width: 50%;
+            height: 50%;
+        }
+
+        .display{
+            border: 2px solid black;
+
+            width: 150px;
+            height: 50px;
+
+            /* display: inline; */
+        }
+
+        .inline{
+            display: inline;
+        }
+
+        .inline-block{
+            display: inline-block;
+        }
+
+        ul{
+            list-style-type: none;
+            
+        }
+        li{
+            display: inline-block;
+
+            width: 100px;
+            height: 50px;
+
+            border: 1px solid red;
+
+            text-align: center;
+            
+            line-height: 50px;
+        }
+
+        .area1{background-color: red};
+        .area2{background-color: orange;}
+        .area3{background-color: yellow;}
+        .area4{background-color: green;}
+        .area5{background-color: blue;}
+
+        .border{
+            width: 100px;
+            height: 100px;
+
+            border: 10px solid red;
+        }
+
+        #border-style-1{border-style: none;}
+        #border-style-2{border-style: hidden;}
+        #border-style-3{border-style: dashed;}
+        #border-style-4{border-style: dotted;}
+        #border-style-5{border-style: double;
+            border-width: 10px;
+        }
+        #border-style-6{border-style: groove;}
+        #border-style-7{border-style: inset;}
+        #border-style-8{border-style: outset;}
+        #border-style-9{border-style: ridge;}
+        #border-style-10{border-style: solid;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Layout</h1>
+
+    <hr>
+
+    <h2>Default Layout</h2>
+    <h3>width, line-height</h3>
+    <h4>Fixed Size</h4>
+    <div class="box1 size"></div>
+    <h4>variant size</h4>
+    <div class="box2 size1"></div>
+
+    <div class="display inline-block area1">영역1</div>
+    <div class="display inline-block area2">영역2</div>
+    <div class="display inline-block area3">영역3</div>
+    <div class="display inline-block area4">영역4</div>
+    <div class="display inline-block area5">영역5</div>
+
+    <ul>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+        <li>메뉴</li>
+    </ul>
+
+    <hr>
+    <h3>테두리 스타일</h3>
+
+    <div class="border" id="border-style-1"></div>
+    <div class="border" id="border-style-2"></div>
+    <div class="border" id="border-style-3"></div>
+    <div class="border" id="border-style-4"></div>
+    <div class="border" id="border-style-5"></div>
+    <div class="border" id="border-style-6"></div>
+    <div class="border" id="border-style-7"></div>
+    <div class="border" id="border-style-8"></div>
+    <div class="border" id="border-style-9"></div>
+    <div class="border" id="border-style-10"></div>
+
+</body>
+</html>

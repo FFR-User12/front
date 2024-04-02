@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+
+            box-sizing: border-box;
+
+            border: 1px solid black;
+        }
+
+        #box1{
+            position: absolute;
+
+            top: 20px;
+
+            background-color: rgba(255, 0, 0, 0.236);
+        }
+        #box2{
+            position: relative;
+            left: 20px;
+            background-color: rgba(191, 255, 0, 0.132)
+        }
+        #hiddenBox{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            
+            background-color: rgba(255, 166, 0, 0.1);
+        }
+        #box3{
+            position: relative;
+            background-color: rgba(85, 0, 255, 0.204);
+        }
+
+        #OUTBOX{
+            position: relative;
+
+            top: 300px;
+
+            border: 10px solid orange;
+
+            height:fit-content;
+            width: fit-content;
+        }
+
+        #firstBox{
+            position: absolute;
+
+            background-color: rgba(255, 0, 0, 0.1);
+
+            height: 50vw;
+            width: 50vw;
+
+        }
+        #secondBox{
+            position: absolute;
+
+            background-color: rgba(0, 0, 255, 0.1);
+
+            left: 5vw;
+            top: 5vw;
+            
+            height: 40vw;
+            width: 40vw;
+        }
+        #thirdBox{
+            position: absolute;
+            background-color: rgba(172, 255, 47, 0.1);
+
+            left: 10vw;
+            top: 10vw;
+
+            height: 30vw;
+            width: 30vw;
+        }
+
+        #fixed{
+            position: fixed;
+            right: 30px;
+            top:30px;
+        }
+    </style>
+</head>
+<body>
+    <p>hello world</p>
+    
+    <div id="box1"></div>
+    <div id="box2">
+        <div id="hiddenBox"></div>
+    </div>
+    <div id="box3"></div>
+
+    <div id="OUTBOX">
+        <div id="firstBox"></div>
+        <div id="secondBox"></div>
+        <div id="thirdBox"></div>
+    </div>
+
+    <div id="fixed">
+
+    </div>
+</body>
+</html>

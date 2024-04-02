@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+</head>
+<body>
+    <h2>첫번째 폼</h2>
+    <form action="../HTML/login.html">
+        <label>ID : <input type="text" name="ID" required></label> <br>
+        <label for="userPW">PW : </label><input type="password" id="userPW" name="PW" required><br>
+
+        <input type="text"><br>
+        <button>로그인</button>
+        <button type="reset">초기화</button>
+    </form>
+
+    <h2>두번째 폼</h2>
+    <form action="../01/login.html">
+        <input type="text" name="search">
+        <input type="email" name="email" required>
+
+        <button>로그인</button>
+    </form>
+
+
+    <h2>텍스트와 관련된 input 태그</h2>
+    <form>
+        <ul>
+            <li>
+                <input type="text" name="id" size="5" maxlength="13" required>
+            </li>
+            <li>
+                <input type="text" name="pw" size="5" maxlength="20" required>
+            </li>
+            <li>
+                <label>이메일 : <input type="email" required></label>
+            </li>
+            <li>
+                홈페이지 : <input type="url" value="https://" placeholder="Inser URL">
+            </li>
+            <li>
+                검색 : <input type="search">
+            </li>
+
+            <li>
+                색상 : 
+                <input type="text" name="list" list="datalist">
+                <datalist id="datalist">
+                    <option value="black">검정색</option>
+                    <option value="white">흰색</option>
+                    <option value="red">빨강</option>
+                </datalist>
+                <datalist id="myColor">
+                    <option value="black">검정색</option>
+                    <option value="white">흰색</option>
+                    <option value="red">빨강</option>
+                </datalist>
+            </li>
+            <li>
+                <input type="color">
+            </li>
+            <li>
+                <input type="number" value="0" min="0" max="100" step="10">
+            </li>
+            <li>
+                <input type="range" value="30" min="0" max="100">
+            </li>
+
+            <li>
+                <input type="date" value="2023-05-29">
+            </li>
+            <li>
+                <input type="month" value="2023-05">
+            </li>
+            <li>
+                <input type="time">
+            </li>
+            <li>
+                <input type="datetime-local">
+            </li>
+
+            <button>SUBMIT</button>
+        </ul>
+    </form>
+    <form action="./07_입력양식.html">
+
+        <h1>라디오버튼과 체크박스</h1>
+
+        <fieldset>
+            <legend>성별</legend>
+            <label>W <input type="radio" name="tie" value="WW"></label>
+            <label>Q <input type="radio" name="tie" value="QQ"></label>
+
+            <label>A <input type="radio" name="horse" value="AA"></label>
+            <label>B <input type="radio" name="horse" value="BB"></label>
+        </fieldset>
+
+        <button>SUB</button>
+        
+    </form>
+
+    <form>
+        <h1>파일</h1>
+        <input type="file" multiple name="ff">
+        <button>서브</button>
+    </form>
+
+
+    <from>
+        <h1>드롭다운</h1>
+            <select name="SEL">
+                <option value="ko">한국</option>
+                <option value="cn">중국</option>
+            </select>
+
+        <select>
+            <optgroup label="아시아">
+                <option value="ko">한국</option>
+                <option value="cn">중국</option>
+            </optgroup>
+        </select>
+
+        <select>
+            <optgroup label="아메리카">
+                <option value="ko">한국</option>
+                <option value="cn">중국</option>
+            </optgroup>
+        </select>
+    </from>
+
+
+</body>
+</html>

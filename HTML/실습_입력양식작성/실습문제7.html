@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Order</title>
+
+    <style>
+        li{
+            list-style-type : none;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>주문하기</h1>
+
+    <form action="hello.html">
+        <ul>
+            <li>
+                고객명 : 
+                <input type="text" name="name" required>
+            </li>
+            <li>
+                전화번호 : 
+                <input type="tel" name="tel" required>
+            </li>
+            <li>
+                E-mail : 
+                <input type="email" name="email" required>
+            </li>
+        </ul>
+
+        <fieldset>
+            <legend>사이즈</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="size" id="" value="Sma">Small
+                </li>
+                <li>
+                    <input type="radio" name="size" id="" value="Med" checked required>Medium
+                </li>
+                <li>
+                    <input type="radio" name="size" id="" value="Lar">Large
+                </li>
+            </ul>
+            
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>토핑</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="topping" value="Bea" required checked>베이컨
+                </li>
+                <li>
+                    <input type="checkbox" name="topping" value="Che">치즈
+                </li>
+                <li>
+                    <input type="checkbox" name="topping" value="Mar">마치
+                </li>
+                <li>
+                    <input type="checkbox" name="topping" value="Mus">버섯
+                </li>
+            </ul>
+        </fieldset>
+
+        Transaction Time : <input type="number" value="30" min="30" max="180" step="10">
+
+        <br>
+
+        요청사항 : <textarea></textarea>
+
+        <br>
+
+        <button>요청하기</button>
+    </form>
+</body>
+</html>

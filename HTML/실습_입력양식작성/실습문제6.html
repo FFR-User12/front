@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>프런트엔드 개발자 지원서</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+
+		textarea{
+			width:100%;
+			height: 100px;
+		}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서</h1>
+			<p>HTML, CSS, Javascript에 대한...</p>
+			<hr>
+			<form>
+				<p><strong>개인정보</strong></p>
+				<ul>
+					<li><label>이름 <input type="text" name="name" placeholder="공백없이 기입"></label></li>
+					<li><label>연락처 <input type="tel" name="tel" placeholder="010-XXXX-XXXX"></label></li>
+				</ul>
+
+				<p><strong>지원 분야</strong></p>
+
+				<ul>
+					<li>
+						<input type="radio" name="application">웹 퍼블리싱
+					</li>
+					<li>
+						<input type="radio" name="application">웹 어플리케이션 개발
+					</li>
+					<li>
+						<input type="radio" name="application">개발 환경 imp
+					</li>
+				</ul>
+
+				<p><strong>지원동기</strong></p>
+
+				<textarea col="3" row="10" placeholder="지원동기를 작성"></textarea>
+
+				<br>
+
+				<button>접수하기</button>
+				<button type="reset">초기화</button>
+			</form>
+		</div>
+  </body>
+</html>

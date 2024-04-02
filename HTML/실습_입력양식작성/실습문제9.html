@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Player</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        span{
+            width: 150px;
+            float: left;
+
+            text-align: center;
+        }
+
+        #hobContainer{
+            width: 250px;
+        }
+
+        .nocontrol{
+            user-select: none;
+        }
+    </style>
+
+    <script>
+        
+        function otherchanged(event, thisObj){
+            if(thisObj.checked){
+                document.getElementById('otherinput').disabled = false;
+            }else{
+                document.getElementById('otherinput').disabled = true;
+            }
+        }
+
+        function emailTypeChanged(event, thisObj){
+
+            if(thisObj.value == "SELF"){
+                document.getElementById('emailInput').type = "email";
+            }else{
+                document.getElementById('emailInput').type = "text";
+            }
+        }
+
+        function noFunction(){
+            alert("NO FUNCTION!");
+        }
+
+    </script>
+</head>
+<body>
+
+    <h1>Register</h1>
+    
+    <form>
+        <fieldset>
+            <legend>
+                necessary items
+            </legend>
+    
+
+            <span>ID</span>
+            <input type="text" name="id" placeholder="ID" maxlength="10" required> <button type="button" onclick="noFunction()">dup checker</button>
+            <br>
+            <span>Password</span>
+            <input type="password" name="pw" minlength="8" placeholder="more than 8 chracter includes alpabet, numeric, symbol" required>
+            <br>
+            <span>Repeat Password</span>
+            <input type="password" name="rpw" minlength="8" placeholder="" required>
+            <br>
+            <span>Email</span>
+            <input type="text" id="emailInput" name="email" required>
+            <select name="emailtype" onchange="emailTypeChanged(event, this)">
+                <option value="SELF">self typing</option>
+                <option value="naver.com">naver</option>
+                <option value="gmail.com">google</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>
+                additional information
+            </legend>
+
+            <p>
+                Profile Image : 
+                <input type="file">
+            </p>
+
+            <p>    
+                Gender : 
+                <input type="radio" name="gen" value="M" checked>Man
+                <input type="radio" name="gen" value="W">Woman
+            </p>
+
+            <p>
+                Brithday : 
+                <input type="date" name="date">
+            </p>
+
+            <p>
+                Hobby : 
+                <div id="hobContainer">
+                    <input type="checkbox" name="hob" value="baseball">baseball
+                    <input type="checkbox" name="hob" value="basketball">bascketball
+                    <input type="checkbox" name="hob" value="soccer">soccer
+                    <input type="checkbox" name="hob" value="learn" checked>learn
+                    <input type="checkbox" name="hob" value="enjoying music">enjoying music
+                    <input type="checkbox" name="hob" value="other" onchange="otherchanged(event, this)">other : <input id="otherinput" type="text" disabled>
+                </div>
+            </p>
+            <p>
+                About Me
+                <br>
+                <textarea></textarea>
+            </p>
+        </fieldset>
+
+        <button type="submit">register</button>
+        <button type="reset">wipe all data</button>
+        <button type="button" onclick="noFunction()">backward</button>
+    </form>
+
+</body>
+</html>
